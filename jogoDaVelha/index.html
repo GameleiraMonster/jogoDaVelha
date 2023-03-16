@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="bloco1" class="item bloco" onclick="incrementClick(id)"></div>
+        <div id="bloco2" class="item bloco" onclick="incrementClick(id)"></div>
+        <div id="bloco3" class="item bloco" onclick="incrementClick(id)"></div>
+        <div id="bloco4" class="item bloco" onclick="incrementClick(id)"></div>
+        <div id="bloco5" class="item bloco" onclick="incrementClick(id)"></div>
+        <div id="bloco6" class="item bloco" onclick="incrementClick(id)"></div>
+        <div id="bloco7" class="item bloco" onclick="incrementClick(id)"></div>
+        <div id="bloco8" class="item bloco" onclick="incrementClick(id)"></div>
+        <div id="bloco9" class="item bloco" onclick="incrementClick(id)"></div>
+    </div>
+
+    <script>
+
+        var counterVal = 0;
+        
+        function incrementClick(id) {
+            do {
+                ++counterVal;
+                switch (id) {
+                    case 'bloco1':
+                        if (counterVal % 2 == 0) {
+                            document.getElementById(id).innerHTML = "X"
+                        } else {
+                            document.getElementById(id).innerHTML = "O"
+                        }
+                        break;
+                    case 'bloco2':
+                        if (counterVal % 2 == 0) {
+                            document.getElementById(id).innerHTML = "X"
+                        } else {
+                            document.getElementById(id).innerHTML = "O"
+                        }
+                        break;
+                    case 'bloco3':
+                        if (counterVal % 2 == 0) {
+                            document.getElementById(id).innerHTML = "X"
+                        } else {
+                            document.getElementById(id).innerHTML = "O"
+                        }
+                        break;
+                    case 'bloco4':
+                        if (counterVal % 2 == 0) {
+                            document.getElementById(id).innerHTML = "X"
+                        } else {
+                            document.getElementById(id).innerHTML = "O"
+                        }
+                        break;
+                    case 'bloco5':
+                        if (counterVal % 2 == 0) {
+                            document.getElementById(id).innerHTML = "X"
+                        } else {
+                            document.getElementById(id).innerHTML = "O"
+                        }
+                        break;
+                    case 'bloco6':
+                        if (counterVal % 2 == 0) {
+                            document.getElementById(id).innerHTML = "X"
+                        } else {
+                            document.getElementById(id).innerHTML = "O"
+                        }
+                        break;
+                    case 'bloco7':
+                        if (counterVal % 2 == 0) {
+                            document.getElementById(id).innerHTML = "X"
+                        } else {
+                            document.getElementById(id).innerHTML = "O"
+                        }
+                        break;
+                    case 'bloco8':
+                        if (counterVal % 2 == 0) {
+                            document.getElementById(id).innerHTML = "X"
+                        } else {
+                            document.getElementById(id).innerHTML = "O"
+                        }
+                        break;
+                    case 'bloco9':
+                        if (counterVal % 2 == 0) {
+                            document.getElementById(id).innerHTML = "X"
+                        } else {
+                            document.getElementById(id).innerHTML = "O"
+                        }
+                        break;
+                    default: 
+                        return console.log("fim do jogo")
+                }
+            }while(counterVal < 12)
+        }
+    </script> 
+</body>
+
+</html>

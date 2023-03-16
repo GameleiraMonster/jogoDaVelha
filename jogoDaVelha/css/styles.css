@@ -1,0 +1,38 @@
+*{
+    background-color: black;
+    margin: 0 auto;
+}
+
+.container{
+
+    margin: 0 auto;
+    background-color:chartreuse;
+    display: flex;
+    max-width: 700px;
+    min-height: 500px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.item{
+    margin: 5px;
+}
+
+.bloco{
+    flex-grow: 1;
+    top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color:black;
+    color: aqua;
+    font-size: 10em;
+    text-align: center;
+    cursor: pointer;
+}
+
+p{
+    color: aliceblue
+    ;
+}
