@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Jogo da Velha</title>
 </head>
 
 <body>
+    <div id="vencedor" class="win">Vencedor</div>
     <div class="container">
         <div id="bloco1" class="item bloco" onclick="incrementClick(id)"></div>
         <div id="bloco2" class="item bloco" onclick="incrementClick(id)"></div>
@@ -23,82 +24,101 @@
     </div>
 
     <script>
-
         var counterVal = 0;
-        
-        function incrementClick(id) {
-            do {
-                ++counterVal;
-                switch (id) {
-                    case 'bloco1':
-                        if (counterVal % 2 == 0) {
-                            document.getElementById(id).innerHTML = "X"
-                        } else {
-                            document.getElementById(id).innerHTML = "O"
-                        }
-                        break;
-                    case 'bloco2':
-                        if (counterVal % 2 == 0) {
-                            document.getElementById(id).innerHTML = "X"
-                        } else {
-                            document.getElementById(id).innerHTML = "O"
-                        }
-                        break;
-                    case 'bloco3':
-                        if (counterVal % 2 == 0) {
-                            document.getElementById(id).innerHTML = "X"
-                        } else {
-                            document.getElementById(id).innerHTML = "O"
-                        }
-                        break;
-                    case 'bloco4':
-                        if (counterVal % 2 == 0) {
-                            document.getElementById(id).innerHTML = "X"
-                        } else {
-                            document.getElementById(id).innerHTML = "O"
-                        }
-                        break;
-                    case 'bloco5':
-                        if (counterVal % 2 == 0) {
-                            document.getElementById(id).innerHTML = "X"
-                        } else {
-                            document.getElementById(id).innerHTML = "O"
-                        }
-                        break;
-                    case 'bloco6':
-                        if (counterVal % 2 == 0) {
-                            document.getElementById(id).innerHTML = "X"
-                        } else {
-                            document.getElementById(id).innerHTML = "O"
-                        }
-                        break;
-                    case 'bloco7':
-                        if (counterVal % 2 == 0) {
-                            document.getElementById(id).innerHTML = "X"
-                        } else {
-                            document.getElementById(id).innerHTML = "O"
-                        }
-                        break;
-                    case 'bloco8':
-                        if (counterVal % 2 == 0) {
-                            document.getElementById(id).innerHTML = "X"
-                        } else {
-                            document.getElementById(id).innerHTML = "O"
-                        }
-                        break;
-                    case 'bloco9':
-                        if (counterVal % 2 == 0) {
-                            document.getElementById(id).innerHTML = "X"
-                        } else {
-                            document.getElementById(id).innerHTML = "O"
-                        }
-                        break;
-                    default: 
-                        return console.log("fim do jogo")
-                }
-            }while(counterVal < 12)
-        }
-    </script> 
+         var contX1 = 0; var contX2 = 0; var contX3 = 0; var contX4 = 0; var contX5 = 0; var contX6 = 0; var contX7 = 0; var contX8 = 0; var contX9 = 0; 
+         var contO1 = 0; var contO2 = 0; var contO3 = 0; var contO4 = 0; var contO5 = 0; var contO6 = 0; var contO7 = 0; var contO8 = 0; var contO9 = 0; 
+         function incrementClick(id) {
+             do {
+                 ++counterVal;
+                 switch (id) {
+                     case 'bloco1':
+                         if (counterVal % 2 == 0) {
+                             document.getElementById(id).innerHTML = "X"
+                             contX1+=2; 
+                         } else {
+                             document.getElementById(id).innerHTML = "O"
+                             contO1+=1;
+                         }
+                         break;
+                     case 'bloco2':
+                         if (counterVal % 2 == 0) {
+                             document.getElementById(id).innerHTML = "X"
+                             contX2+=2;
+                         } else {
+                             document.getElementById(id).innerHTML = "O"
+                             contO2+=1;
+                         }
+                         break;
+                     case 'bloco3':
+                         if (counterVal % 2 == 0) {
+                             document.getElementById(id).innerHTML = "X"
+                             contX3+=2;
+                         } else {
+                             document.getElementById(id).innerHTML = "O"
+                             contO3+=1;
+                         }
+                         break;
+                     case 'bloco4':
+                         if (counterVal % 2 == 0) {
+                             document.getElementById(id).innerHTML = "X"
+                             contX4+=2;
+                         } else {
+                             document.getElementById(id).innerHTML = "O"
+                             contO4+=1;
+                         }
+                         break;
+                     case 'bloco5':
+                         if (counterVal % 2 == 0) {
+                             document.getElementById(id).innerHTML = "X"
+                             contX5+=2;
+                         } else {
+                             document.getElementById(id).innerHTML = "O"
+                             contO5+=1;
+                         }
+                         break;
+                     case 'bloco6':
+                         if (counterVal % 2 == 0) {
+                             document.getElementById(id).innerHTML = "X"
+                             contX6+=2;
+                         } else {
+                             document.getElementById(id).innerHTML = "O"
+                             contO6+=1;
+                         }
+                         break;
+                     case 'bloco7':
+                         if (counterVal % 2 == 0) {
+                             document.getElementById(id).innerHTML = "X"
+                             contX7+=2;
+                         } else {
+                             document.getElementById(id).innerHTML = "O"
+                             contO7+=1;
+                         }
+                         break;
+                     case 'bloco8':
+                         if (counterVal % 2 == 0) {
+                             document.getElementById(id).innerHTML = "X"
+                             contX8+=2;
+                         } else {
+                             document.getElementById(id).innerHTML = "O"
+                             contO8+=1;
+                         }
+                         break;
+                     case 'bloco9':
+                         if (counterVal % 2 == 0) {
+                             document.getElementById(id).innerHTML = "X"
+                             contX9+=2;
+                         } else {
+                             document.getElementById(id).innerHTML = "O"
+                             contO9+=1;
+                         }
+                         break;
+                 }
+             } while (counterVal < 10 )
+             if((contX1 + contX2 + contX3)%2 == 0 && contX5 != '0'){
+                     document.getElementById("vencedor").innerHTML = "X Venceu"
+                 }
+         }
+    </script>
 </body>
 
 </html>
